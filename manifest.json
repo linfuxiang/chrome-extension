@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "myExtension",
+    "version": "1.0.0",
+    "description": "简单的Chrome扩展demo",
+    "icons": {
+        "16": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "page_action": {
+        "default_icon": "img/icon.png",
+        "default_title": "我的插件。",
+        "default_popup": "popup.html"
+    },
+    "homepage_url": "https://linfuxiang.github.io/",
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "content_scripts": [{
+        "matches": ["*://dvb-dev.yaochufa.com/*"],
+        "js": ["content-script.js"],
+        "run_at": "document_end"
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["declarativeContent"],
+    "web_accessible_resources": ["inject.js"],
+    "incognito": "not_allowed"
+}

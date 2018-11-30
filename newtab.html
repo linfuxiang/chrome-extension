@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新标签页</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        div#bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: url(./img/bg.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        div#pic {
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div id="pic">
+        <div>选择图片：</div>
+        <input type="file" id="file">
+    </div>
+    <script src="newtab.js"></script>
+</body>
+
+</html>

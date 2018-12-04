@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新标签页</title>
+    <link rel="stylesheet" href="../public/common.css">
+    <style>
+        .content {
+            padding:  10px 20px;
+            width: 290px;
+            font-size: 16px;
+        }
+        button#btn {
+            margin-top: 5px;
+            display: block;
+        }
+        #ss {
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <label for="switch">开关：</label>
+        <input type="checkbox" name="switch" value="" id="switch">
+        <br>
+        <label for="host">本地开发域名：</label>
+        <input type="text" name="host" value="" id="host" placeholder="请输入域名">
+        <!-- <button id="btn">保存</button> -->
+        <p id="ss">保存成功！</p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

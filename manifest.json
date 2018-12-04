@@ -11,21 +11,21 @@
     "page_action": {
         "default_icon": "img/icon.png",
         "default_title": "我的插件。",
-        "default_popup": "popup.html"
+        "default_popup": "popup/popup.html"
     },
     "homepage_url": "https://linfuxiang.github.io/",
     "chrome_url_overrides": {
-        "newtab": "newtab.html"
+        "newtab": "newtab/newtab.html"
     },
     "content_scripts": [{
         "matches": ["*://dvb-dev.yaochufa.com/*"],
-        "js": ["content-script.js"],
-        "run_at": "document_end"
+        "js": ["public/common.js", "inject/content-script.js"],
+        "run_at": "document_idle"
     }],
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["bg/background.js"]
     },
-    "permissions": ["declarativeContent"],
-    "web_accessible_resources": ["inject.js"],
+    "permissions": ["declarativeContent", "storage"],
+    "web_accessible_resources": ["public/common.js", "inject/inject.js"],
     "incognito": "not_allowed"
 }

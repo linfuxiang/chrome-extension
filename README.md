@@ -1,2 +1,2 @@
 # new-tab
-A chrome extension
+A simple Chrome Extension that can customize the background image of a new tab page.  
